@@ -4,38 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction Escape Room</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to your CSS file (in the <head> section) -->
+    <link rel="stylesheet" href="style.css"> <!-- Make sure the CSS file is in the same folder -->
+
 </head>
 <body>
-    <div class="container" id="game-container">
+    <div class="container">
         <h2 class="terminal-text">Escape the System</h2>
-        <p class="terminal-text"><strong>WARNING:</strong> You are trapped in a corrupted writing program! Rearrange the scrambled introduction to unlock your document and escape.</p>
-        
-        <div id="sentences">
-            <div class="sentence" draggable="true">This essay will compare and contrast the influence of positive and negative role models on adolescent decision-making.</div>
-            <div class="sentence" draggable="true">Role models play a significant role in shaping personal development.</div>
-            <div class="sentence" draggable="true">From sports icons to historical figures, role models have shaped societies for generations.</div>
-            <div class="sentence" draggable="true">Positive role models inspire growth, while negative role models can lead to harmful behaviors.</div>
-        </div>
-        
-        <div id="drop-area" class="terminal-text">Drag and drop the sentences in the correct order to restore the system...</div>
-        
-        <h3 class="terminal-text">Paraphrase the Thesis Statement</h3>
-        <textarea id="paraphrase" placeholder="Type your paraphrased thesis here..."></textarea>
+        <p class="terminal-text"><strong>WARNING:</strong> You are trapped in a corrupted writing program! Rearrange the scrambled introduction to unlock your Word document and escape.</p>
+
+        <!-- Your content here (sentences, drag-and-drop area, etc.) -->
+
         <button onclick="checkOrder()">Submit</button>
         <button onclick="tryAgain()" class="hidden">Try Again</button>
-        
+
         <p id="result" class="hidden terminal-text"></p>
         <p id="paraphrase-feedback" class="hidden terminal-text"></p>
     </div>
 
-    <div id="success-screen" class="hidden">
-        <h2>🎉 Congratulations! 🎉</h2>
-        <p>You have successfully restored the system and unlocked your document.</p>
-        <p id="feedback-message"></p>
-        <button onclick="tryAgain()">Try Again</button>
-    </div>
+    <!-- Your other content here -->
 
-    <script src="script.js"></script>
+    <!-- Link to your JavaScript file (just before the closing </body> tag) -->
+    <script src="app.js"></script> <!-- Make sure the JS file is in the same folder -->
+
 </body>
 </html>
