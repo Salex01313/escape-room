@@ -6,16 +6,24 @@
     <title>Introduction Escape Room</title>
 
     <!-- Link to your CSS file (in the <head> section) -->
-    <link rel="stylesheet" href="style.css"> <!-- Make sure the CSS file is in the same folder -->
-
+    <link rel="stylesheet" href="style.css"> <!-- Make sure the CSS file is in the same folder as index.html -->
 </head>
 <body>
     <div class="container">
         <h2 class="terminal-text">Escape the System</h2>
         <p class="terminal-text"><strong>WARNING:</strong> You are trapped in a corrupted writing program! Rearrange the scrambled introduction to unlock your Word document and escape.</p>
+        
+        <div id="sentences">
+            <div class="sentence" draggable="true">This essay will compare and contrast the influence of positive and negative role models on adolescent decision-making.</div>
+            <div class="sentence" draggable="true">Role models play a significant role in shaping personal development.</div>
+            <div class="sentence" draggable="true">From sports icons to historical figures, role models have shaped societies for generations.</div>
+            <div class="sentence" draggable="true">Positive role models inspire growth, while negative role models can lead to harmful behaviors.</div>
+        </div>
 
-        <!-- Your content here (sentences, drag-and-drop area, etc.) -->
+        <div id="drop-area" class="terminal-text">Drag and drop the sentences in the correct order to restore the system...</div>
 
+        <h3 class="terminal-text">Paraphrase the Thesis Statement</h3>
+        <textarea id="paraphrase" placeholder="Type your paraphrased thesis here..."></textarea>
         <button onclick="checkOrder()">Submit</button>
         <button onclick="tryAgain()" class="hidden">Try Again</button>
 
@@ -23,10 +31,8 @@
         <p id="paraphrase-feedback" class="hidden terminal-text"></p>
     </div>
 
-    <!-- Your other content here -->
-
     <!-- Link to your JavaScript file (just before the closing </body> tag) -->
-    <script src="app.js"></script> <!-- Make sure the JS file is in the same folder -->
+    <script src="app.js"></script> <!-- Make sure the JS file is in the same folder as index.html -->
 
 </body>
 </html>
